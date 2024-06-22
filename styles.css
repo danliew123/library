@@ -22,6 +22,10 @@
     isolation: isolate;
   }
 
+body {
+    background-color:rgb(241, 239, 236);
+}
+
 form{
     border: 4px solid black;
     border-radius: 4px;
@@ -100,7 +104,7 @@ legend {
 
 .book div{
     padding: 16px;
-    height: 20%;
+    height: 17%;
 }
 
 .submit {
@@ -108,13 +112,16 @@ legend {
 }
 
 button {
-    width: 120px;
+    width: 117px;
     height: 30px;
     padding: 0;
     margin: auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .book button{
-    margin-top: 12px;
+    margin-top: 8px;
 }
 

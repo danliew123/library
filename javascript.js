@@ -43,7 +43,16 @@ form.addEventListener('submit', (e) => {
             booklist[i].setAttribute('index', i);
         }
     })
-    divBook.append(divTitle, divAuthor, divPages, divRead, delet)
+    const toggle = document.createElement('button');
+    toggle.textContent = 'Read?'
+    toggle.addEventListener('click', () => {
+        if (divRead.textContent === 'read') {
+            divRead.textContent = 'not read'
+        } else if (divRead.textContent === 'not read') {
+            divRead.textContent = 'read'
+        }
+    })
+    divBook.append(divTitle, divAuthor, divPages, divRead, toggle, delet)
     divBook.setAttribute('index', (myLibrary.length - 1));
     divBook.classList.add('book')
     library.appendChild(divBook)
@@ -91,7 +100,16 @@ for (let i = 0; i < myLibrary.length; i++) {
             booklist[i].setAttribute('index', i);
         }
     })
-    divBook.append(divTitle, divAuthor, divPages, divRead, delet);
+    const toggle = document.createElement('button');
+    toggle.textContent = 'Read?'
+    toggle.addEventListener('click', () => {
+        if (divRead.textContent === 'read') {
+            divRead.textContent = 'not read'
+        } else if (divRead.textContent === 'not read') {
+            divRead.textContent = 'read'
+        }
+    })
+    divBook.append(divTitle, divAuthor, divPages, divRead, toggle, delet);
     
     divBook.classList.add('book');
     library.appendChild(divBook);
